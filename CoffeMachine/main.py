@@ -61,7 +61,6 @@ while is_on:
         is_on = False
     elif order in MENU:
         if check_resource(order):
-            # reduce the ingredients
             transaction_complate = check_transaction(order)
             if transaction_complate:
                 profit += MENU[order]["cost"]
