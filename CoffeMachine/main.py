@@ -40,7 +40,7 @@ def check_transaction(order):
     elif change == 0:
         return True
     else:
-        print("There is not enough money.Money refund.")
+        print("There is not enough money.Money refunded.")
         return False
 
 
