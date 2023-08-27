@@ -1,6 +1,6 @@
 from data import MENU, resources, profit
 
-# print(MENU, resources)
+# print(MENU, resources, profit)
 
 QUARTER = 0.25
 DIME = 0.10
@@ -20,7 +20,7 @@ def check_resource(order):
     return True
 
 def check_transaction(order):
-    """Check if the money insert is enough."""
+    """Check if the money insert is enough to pay the order."""
     print("Please insert coins.")
     quarter_count = int(input("How many quarters? "))
     dime_count = int(input("How many dimes? "))
