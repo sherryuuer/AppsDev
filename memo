@@ -1,0 +1,40 @@
+github code
+
+C:\Users\sherr\Desktop>ssh-keygen -t rsa -C "sherryuuer@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\sherr/.ssh/id_rsa):
+Created directory 'C:\\Users\\sherr/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\sherr/.ssh/id_rsa
+Your public key has been saved in C:\Users\sherr/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:GREWtylVff9KwUz4JKlgByridUKRfBYrrzY4d73/+pU sherryuuer@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|   .oo..*+o..+   |
+|   .o o+o+.o+ + .|
+|  . =o+.ooo. B ..|
+| . o *   +.   = .|
+|  .   . S      ..|
+|   . . .      ...|
+|  o = . .    .E. |
+|   + o   .   ..  |
+|        ..o+o    |
++----[SHA256]-----+
+
+key登録
+vscode:
+ssh -T git@github.com
+git config --global user.name "name"
+git config --global user.email "email"
+git init
+git remote add origin git@github.com:sherryuuer/SallyFolder.git
+git clone git@github.com:sherryuuer/SallyFolder
+
+git checkout master (go to the master branch)
+git checkout -b localwork
+(switch to a new branch "localwork")
+(modify some file)
+git add *
+git commit -m "date"
