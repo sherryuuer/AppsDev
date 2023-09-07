@@ -36,8 +36,11 @@ git checkout main (go to the master branch)
 git checkout -b localwork
 (switch to a new branch "localwork")
 (modify some file)
+
+(loop everyday)
 git add *
 git commit -m "date"
 git checkout main
 git merge localwork
 git push
+git checkout localwork
