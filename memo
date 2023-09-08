@@ -44,3 +44,11 @@ git checkout main
 git merge localwork
 git push
 git checkout localwork
+
+
+
+2023-9-8
+day 28 Pomodoro_Widget
+I made this Pomodoro widget with Teacher Angla,and managed to make it pop up when a round of work is over.
+And then I made other pj a little clear.
+I decide to write sth everyday to memorise some thinking.
