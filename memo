@@ -50,7 +50,7 @@ git push
 git branch -D localwork
 
 
-
+git pull
 git checkout -b localwork
 
 
