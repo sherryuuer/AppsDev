@@ -47,7 +47,11 @@ git commit -m "date"
 git checkout main
 git merge localwork
 git push
-git checkout localwork
+git branch -D localwork
+
+
+
+git checkout -b localwork
 
 
 2023-9-9
