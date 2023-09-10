@@ -1,5 +1,6 @@
 # SallyFolder
-something somecode
+
+This is my sandbox, my playground.
 
 Just a little folder to learn python.
 As a beginner of python,i learn the 100 day of code with teacher Angla on udemy.

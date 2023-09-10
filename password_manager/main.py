@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 from random import randint, shuffle, choice
 import pyperclip
+import json
 
 
 FONT_NAME = "Courier"
@@ -21,11 +22,18 @@ def generate_password():
     password_input.insert(0, password)
     pyperclip.copy(password)
 
+
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save_password():
     website = website_input.get()
     email = email_input.get()
     password = password_input.get()
+    new_data = {
+        website: {
+            "email": email,
+            "password": password
+        }
+    }
 
     # message box
     if len(website) == 0 or len(password) == 0:
@@ -34,12 +42,64 @@ def save_password():
         is_ok = messagebox.askokcancel(title=website, message=f"These are the details entered: \n"
                            f"Email: {email} \nPassword: {password} \nIs it ok to save?")
         if is_ok:
-            with open("password_manager/data.txt", mode="a") as f:
-                f.write(f"{website} | {email} | {password}\n")
+            try:
+                with open("password_manager/data.json", mode="r") as f:
+                    # Reading the old data
+                    data = json.load(f)
+            except FileNotFoundError:
+                with open("password_manager/data.json", mode="w") as f:
+                    json.dump(new_data, f, indent=4) 
+            else:
+                # Updating old data with new data
+                data.update(new_data)
+                # Saving updated data
+                with open("password_manager/data.json", mode="w") as f:
+                    json.dump(data, f, indent=4) 
+            finally:
                 website_input.delete(0, END)
                 password_input.delete(0, END)
         else:
             pass
+
+
+# ---------------------------- SEARCH PASSWORD ------------------------------- #
+def search_password():
+    website = website_input.get()
+    try:
+        with open("password_manager/data.json", mode="r") as f:
+            # Reading the data
+            data = json.load(f)
+    except FileNotFoundError:
+        messagebox.showerror(title="Oops!", message="No data file found.")
+    else:
+        # Search the key
+        if website in data:
+            email = data[website]["email"]
+            password = data[website]["password"]
+            messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
+            pyperclip.copy(password)
+        else:
+            messagebox.showerror(title="Oops!", message=f"No details for {website} exsits.")
+        # when you can use if-else,then use it.If you can not easily handle with some error.then use try-except.
+
+
+    # # do by myself.this works well too.But I use try-except too much.
+    # website = website_input.get()
+    # try:
+    #     with open("password_manager/data.json", mode="r") as f:
+    #         # Reading the data
+    #         data = json.load(f)
+    #         # Search the key
+    #         try:
+    #             email = data[website]["email"]
+    #             password = data[website]["password"]
+    #             messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
+    #             pyperclip.copy(password)
+    #         except KeyError:
+    #             messagebox.showerror(title="Oops!", message="No details for the website.")
+    # except FileNotFoundError:
+    #     messagebox.showerror(title="Oops!", message="No data file found.")
+
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
 window.title("Password Manager")
@@ -60,8 +120,8 @@ password_label = Label(text="Password:", font=(FONT_NAME, FONT_SIZE))
 password_label.grid(column=0, row=3)
 
 # Entrys
-website_input = Entry(width=49)
-website_input.grid(row=1, column=1, columnspan=2)
+website_input = Entry(width=30)
+website_input.grid(row=1, column=1)
 website_input.focus()
 email_input = Entry(width=49)
 email_input.grid(row=2, column=1, columnspan=2)
@@ -74,5 +134,7 @@ generate_button = Button(text="Generate Password", command=generate_password)
 generate_button.grid(column=2, row=3)
 add_button = Button(text="Add", width=42, command=save_password)
 add_button.grid(row=4, column=1, columnspan=2)
+search_button = Button(text=" Search Password ", command=search_password)  # width=xx is ok
+search_button.grid(column=2, row=1)
 
 window.mainloop()

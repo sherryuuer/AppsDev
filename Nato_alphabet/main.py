@@ -36,6 +36,32 @@ data_dict = {row.letter: row.code for (index, row) in data.iterrows()}
 # print(data_dict)
 
 # TODO 2. Create a list of the phonetic code words from a word that the user inputs.
-word = input("Enter a word: ").upper()
-output_list = [data_dict[letter] for letter in word]
-print(output_list)
+# word = input("Enter a word: ").upper()
+# output_list = [data_dict[letter] for letter in word]
+# print(output_list)
+
+# Raise exception when the user input sth that is not a alphabet.
+# while True:
+#     try:
+#         word = input("Enter a word: ").upper()
+#         output_list = [data_dict[letter] for letter in word]
+#         print(output_list)
+#     except KeyError:
+#         print("Sorry,only letters in the alphabet please.")
+
+# But this not good.
+# It is better to create a function, and when we got an error, we print sth and repeat the function to give the user another chance to input sth.
+
+
+def generate_phonetic():
+    word = input("Enter a word: ").upper()
+    try:
+        output_list = [data_dict[letter] for letter in word]
+    except KeyError:
+        print("Sorry,only letters in the alphabet please.")
+        generate_phonetic() # look here
+    else:
+        print(output_list)
+
+
+generate_phonetic()
