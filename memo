@@ -54,9 +54,12 @@ git pull
 git checkout -b localwork
 
 
+
+
+
 2023-9-10
 Learned about error and how to handle it.
-Use if-else if you can handle,use try-except-else-finally with some issue that it's not easy to handle.
+Use if-else when you can handle,use try-except-else-finally with some issue that it's not easy to handle.
 
 2023-9-9
 I made a password generator with Angla.
