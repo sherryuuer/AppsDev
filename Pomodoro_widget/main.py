@@ -22,7 +22,7 @@ def popup():
     win.title("Pomodoro")
     win.config(padx=100, pady=50, bg=YELLOW)
     Label(win, text = "Have a break!", fg=GREEN, bg=YELLOW, font=(FONT_NAME, 40, "bold")).pack()
-    win.attributes('-topmost',True)
+    win.attributes('-topmost', True)
     win.mainloop()
 
 
