@@ -57,14 +57,13 @@ git checkout -b localwork
 ---------------Need to do-----------------
 Reeborg world
 Quizzler_app the two
-
+Exponential Backoff retry --API how to make it
 
 
 ---------------My Learning Diary----------
 2023-9-15
 keep learning Day35!
 And then review.
-Exponential Backoff???retry?
 
 
 2023-9-14
