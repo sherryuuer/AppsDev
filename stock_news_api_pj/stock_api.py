@@ -2,7 +2,7 @@ def get_the_stock_json(symbol):
     import requests
 
     STOCK_ENDPOINT = "https://www.alphavantage.co/query"
-    STOCK_APIKEY = "6H5CTCZXZPGIH0EA"
+    STOCK_APIKEY = "my_key"
 
     parameters = {
         "function": "TIME_SERIES_DAILY",

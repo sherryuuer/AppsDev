@@ -1,7 +1,7 @@
 def send_message_to_slack(message):
     from slack_sdk.webhook import WebhookClient
 
-    url = "https://hooks.slack.com/services/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"
+    url = "https://hooks.slack.com/services/xxxxxxxxxx/xxxxxxxxx/xxxxxxxxxxxxxxx"
     webhook = WebhookClient(url)
 
     response = webhook.send(text=message)

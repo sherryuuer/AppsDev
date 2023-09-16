@@ -5,7 +5,7 @@ def get_news(company="Tesla"):
     endpoint = "https://newsapi.org/v2/everything"
     parameters = {
         "q": quote(company),
-        "apiKey": 'd4fcdc1c77f74a8a8074de69a825015f',
+        "apiKey": 'my_key',
     }
     responses = requests.get(url=endpoint, params=parameters)
     responses.raise_for_status()
