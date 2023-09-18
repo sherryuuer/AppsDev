@@ -1,0 +1,38 @@
+1,get spreadsheet.
+2,get api key.
+3,api doc:
+https://docs.google.com/document/d/1_q-K-ObMTZvO0qUEAxROrN3bwMujwAN25sLHwJzliK0/edit#heading=h.73n49tgew66c
+4,set up GSS with sheety.
+https://dashboard.sheety.co/
+sheety doc:
+https://sheety.co/docs/requests
+5,add auth to sheety.
+6,this is the out put.
+https://docs.google.com/spreadsheets/d/1jMg7DtazIqu1-I9YkAok8Nv5-nfDwu8Mnbclz_H7YE4/edit#gid=0
+7,Environment variables
+format:set VAR_NAME=VAR_VALUE
+set nutritionix_apiid = "xxx"
+set nutritionix_apikey = "xxx"
+set sheety_bearer_token = 'xxx'
+
+
+
+{
+    'exercises': [
+        {'tag_id': 63,
+         'user_input': 'swam', 
+         'duration_min': 60, 
+         'met': 6, 
+         'nf_calories': 294, 
+         'photo': {
+            'highres': 'https://d2xdmhkmkbyw75.cloudfront.net/exercise//63_highres.jpg', 
+            'thumb': 'https://d2xdmhkmkbyw75.cloudfront.net/exercise//63_thumb.jpg', 
+            'is_user_uploaded': False
+            }, 
+         'compendium_code': 18310, 
+         'name': 'swimming', 
+         'description': None, 
+         'benefits': None}
+        ]
+}
+

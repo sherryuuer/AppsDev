@@ -1,4 +1,78 @@
-github code
+S.W.futaba
+---------------Need to do task-----------------
+Reeborg world
+☑Quizzler_app the two
+Exponential Backoff retry --API how to make it
+
+
+---------------My Learning Diary----------
+2023-9-18
+finish the sheety project.
+memo your exercise data to the google spread sheet.
+
+2023-9-17
+Pixela is intersting.
+Learned the http get post put delete. 
+
+2023-9-16
+Done Day 36
+Made the stock app
+Use stock api,news api and send message to my slack.
+Feel good.
+but just keep going.
+
+2023-9-15
+keep learning Day35!
+And then review.
+
+2023-9-14
+OPP
+review Day17~23
+Day34 lesson
+Feel a little difficult about the OPP
+I am going to review the lesson before and come back to fix my bugs.
+
+
+2023-9-12
+Day33
+finished the lesson.
+
+2023-9-11
+I learn so much today.
+
+Day33
+API
+What's api.Maybe I never understand it until now.
+Made kanye quotes app. https://api.kanye.rest
+
+Day32
+Learn about SMTP and datetime and made a batch to send email to your friend on their birthday.
+Not that difficult.
+And at last comes to the cloud service,what I am doing now.
+That feels very good.
+
+Day31
+Very suprise,because I did't except to learn language by coding.ww
+Really amazing.
+Flash card system.Now I can remember 5000 English words by it.WW
+
+2023-9-10
+Learned about error and how to handle it.
+Use if-else when you can handle,use try-except-else-finally with some issue that it's not easy to handle.
+
+2023-9-9
+I made a password generator with Angla.
+It seems very useful.and so many fun.
+
+2023-9-8
+day 28 Pomodoro_Widget
+I made this Pomodoro widget with Teacher Angla,and managed to make it pop up when a round of work is over.
+And then I made other pj a little clear.
+I decide to write sth everyday to memorise some thinking.
+
+Started from around 2023-8-12 Maybe.
+
+github command:
 
 C:\Users\sherr\Desktop>ssh-keygen -t rsa -C "sherryuuer@gmail.com"
 Generating public/private rsa key pair.
@@ -53,77 +127,7 @@ git branch -D localwork
 git pull
 git checkout -b localwork
 
-
----------------Need to do-----------------
-Reeborg world
-Quizzler_app the two
-Exponential Backoff retry --API how to make it
-
-
----------------My Learning Diary----------
-2023-09-16
-Pixela is intersting.
-Learned the http get post put delete. 
-
-
-2023-09-16
-Done Day 36
-Made the stock app
-Use stock api,news api and send message to my slack.
-Feel good.
-but just keep going.
-
-
-2023-9-15
-keep learning Day35!
-And then review.
-
-
-2023-9-14
-OPP
-review Day17~23
-Day34 lesson
-Feel a little difficult about the OPP
-I am going to review the lesson before and come back to fix my bugs.
-
-
-2023-9-12
-Day33
-finished the lesson.
-
-2023-9-11
-I learn so much today.
-
-Day33
-API
-What's api.Maybe I never understand it until now.
-Made kanye quotes app. https://api.kanye.rest
-
-Day32
-Learn about SMTP and datetime and made a batch to send email to your friend on their birthday.
-Not that difficult.
-And at last comes to the cloud service,what I am doing now.
-That feels very good.
-
-Day31
-Very suprise,because I did't except to learn language by coding.ww
-Really amazing.
-Flash card system.Now I can remember 5000 English words by it.WW
-
-2023-9-10
-Learned about error and how to handle it.
-Use if-else when you can handle,use try-except-else-finally with some issue that it's not easy to handle.
-
-2023-9-9
-I made a password generator with Angla.
-It seems very useful.and so many fun.
-
-2023-9-8
-day 28 Pomodoro_Widget
-I made this Pomodoro widget with Teacher Angla,and managed to make it pop up when a round of work is over.
-And then I made other pj a little clear.
-I decide to write sth everyday to memorise some thinking.
-
+some debug:
 here is where I learned this.
  https://zenn.dev/kyami/articles/f5ded861b6f56a#6.8-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%81%AE%E5%A4%89%E6%9B%B4%E3%82%92git%E3%81%A7%E7%AE%A1%E7%90%86%E3%81%99%E3%82%8B
 here it the log of my merge problem log:
