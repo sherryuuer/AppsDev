@@ -111,6 +111,7 @@ git config --global user.name "name"
 git config --global user.email "email"
 git init
 git remote add origin git@github.com:sherryuuer/SallyFolder.git
+git clone git@github.com:sherryuuer/MLANN
 git clone git@github.com:sherryuuer/SallyFolder
 
 git checkout main (go to the master branch)
