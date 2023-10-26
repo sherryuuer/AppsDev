@@ -2,10 +2,21 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from PIL import Image
+import time
 
 
 st.title("St study lab")
 st.write("I am going to make some thing very interesting today.")
+
+st.write("Progress...")
+
+bar = st.progress(0)
+with st.empty():
+    for i in range(100):
+        st.write(i + 1, "%")
+        time.sleep(0.1)
+        bar.progress(i + 1)
+
 
 st.sidebar.write("Wights Bar")
 if st.sidebar.checkbox("Show the image"):
